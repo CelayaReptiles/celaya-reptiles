@@ -13,8 +13,19 @@ export function CartProvider({ children }) {
     setCarrito((prev) => prev.filter((item, index) => index !== id));
   };
 
+  const vaciarCarrito = () => {
+    setCarrito([]);
+  };
+
   return (
-    <CartContext.Provider value={{ carrito, agregarAlCarrito, eliminarDelCarrito }}>
+    <CartContext.Provider
+      value={{
+        carrito,
+        agregarAlCarrito,
+        eliminarDelCarrito,
+        vaciarCarrito,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );

@@ -1,27 +1,57 @@
-import { useCart } from "../context/CartContext";
+import React, { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 
-function Carrito() {
-  const { carrito, eliminarDelCarrito } = useCart();
+const Carrito = () => {
+  const { carrito, eliminarDelCarrito, vaciarCarrito } = useContext(CartContext);
 
   return (
     <div>
-      <h2>🛒 Carrito de compras</h2>
+      <h2>🛒 Tu Carrito</h2>
 
       {carrito.length === 0 ? (
-        <p>Tu carrito está vacío.</p>
+        <p>No hay productos en el carrito.</p>
       ) : (
-        <ul>
+        <div>
           {carrito.map((producto, index) => (
-            <li key={index} style={{ marginBottom: "1rem" }}>
-              <strong>{producto.nombre}</strong> - {producto.precio}
-              <br />
-              <button onClick={() => eliminarDelCarrito(index)}>Eliminar</button>
-            </li>
+            <div key={index} style={{ border: '1px solid #ccc', padding: '1rem', marginBottom: '1rem', borderRadius: '10px', background: 'white' }}>
+              <h3>{producto.nombre}</h3>
+              <p>Precio: ${producto.precio}</p>
+              <button
+                onClick={() => eliminarDelCarrito(index)}
+                style={{
+                  backgroundColor: '#e67e22',
+                  color: 'white',
+                  border: 'none',
+                  padding: '0.5rem 1rem',
+                  borderRadius: '5px',
+                  cursor: 'pointer',
+                }}
+              >
+                Eliminar
+              </button>
+            </div>
           ))}
-        </ul>
+
+          {/* Botón para vaciar el carrito */}
+          <button
+            onClick={vaciarCarrito}
+            style={{
+              marginTop: '1rem',
+              padding: '0.7rem 1.5rem',
+              backgroundColor: '#e74c3c',
+              color: 'white',
+              border: 'none',
+              borderRadius: '5px',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+            }}
+          >
+            Vaciar carrito
+          </button>
+        </div>
       )}
     </div>
   );
-}
+};
 
 export default Carrito;
