@@ -41,7 +41,6 @@ const Carrito = () => {
             </div>
           ))}
 
-          {/* Botón para vaciar carrito */}
           <button
             onClick={vaciarCarrito}
             style={{
@@ -64,4 +63,3 @@ const Carrito = () => {
 };
 
 export default Carrito;
-
