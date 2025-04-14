@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
-import { CartContext } from '../context/CartContext';
+import React from 'react';
+import { useCart } from '../context/CartContext';
 
 const Carrito = () => {
-  const { carrito, eliminarDelCarrito, vaciarCarrito } = useContext(CartContext);
+  const { carrito, eliminarDelCarrito, vaciarCarrito } = useCart();
 
   return (
     <div>
@@ -13,7 +13,16 @@ const Carrito = () => {
       ) : (
         <div>
           {carrito.map((producto, index) => (
-            <div key={index} style={{ border: '1px solid #ccc', padding: '1rem', marginBottom: '1rem', borderRadius: '10px', background: 'white' }}>
+            <div
+              key={index}
+              style={{
+                border: '1px solid #ccc',
+                padding: '1rem',
+                marginBottom: '1rem',
+                borderRadius: '10px',
+                background: 'white',
+              }}
+            >
               <h3>{producto.nombre}</h3>
               <p>Precio: ${producto.precio}</p>
               <button
@@ -32,7 +41,7 @@ const Carrito = () => {
             </div>
           ))}
 
-          {/* Botón para vaciar el carrito */}
+          {/* Botón para vaciar carrito */}
           <button
             onClick={vaciarCarrito}
             style={{
@@ -55,3 +64,4 @@ const Carrito = () => {
 };
 
 export default Carrito;
+
