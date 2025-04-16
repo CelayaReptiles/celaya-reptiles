@@ -1,39 +1,49 @@
-// src/pages/Cursos.jsx
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Cursos.css";
 
 function Cursos() {
-    const cursos = [
-      {
-        id: 1,
-        titulo: "Manejo Básico de Reptiles",
-        descripcion: "Aprende a cuidar geckos, dragones barbudos y serpientes.",
-        precio: "MXN $499",
-        enlace: "https://wa.me/521xxxxxxxxxx?text=Hola,%20me%20interesa%20el%20curso%20de%20manejo%20de%20reptiles",
-      },
-      {
-        id: 2,
-        titulo: "Cría Responsable de Reptiles",
-        descripcion: "Curso especializado en incubación, genética y venta responsable.",
-        precio: "MXN $699",
-        enlace: "https://wa.me/521xxxxxxxxxx?text=Hola,%20quiero%20información%20del%20curso%20de%20cría%20de%20reptiles",
-      },
-    ];
-  
-    return (
-      <div>
-        <h2>📚 Cursos Online</h2>
+  const cursos = [
+    {
+      id: 1,
+      nombre: "Introducción al mundo de los reptiles",
+      descripcion: "Aprende lo básico sobre el manejo, hábitat y alimentación de reptiles.",
+      imagen: "https://via.placeholder.com/300x200?text=Curso+Reptiles",
+      enlace: "/curso-introduccion",
+    },
+    {
+      id: 2,
+      nombre: "Parasitología en reptiles",
+      descripcion: "Identificación, prevención y tratamiento de parásitos en reptiles.",
+      imagen: "https://via.placeholder.com/300x200?text=Curso+Parasitología",
+      enlace: "/curso-parasitologia",
+    },
+    {
+      id: 3,
+      nombre: "Medicina en serpientes",
+      descripcion: "Explora los fundamentos médicos para cuidar serpientes exóticas.",
+      imagen: "https://via.placeholder.com/300x200?text=Curso+Medicina",
+      enlace: "/curso-medicina",
+    },
+  ];
+
+  return (
+    <div className="cursos-container">
+      <h2>📚 Cursos Disponibles</h2>
+      <div className="cursos-grid">
         {cursos.map((curso) => (
-          <div key={curso.id} style={{ marginBottom: "1.5rem" }}>
-            <h3>{curso.titulo}</h3>
+          <div key={curso.id} className="curso-card">
+            <img src={curso.imagen} alt={curso.nombre} className="curso-img" />
+            <h3>{curso.nombre}</h3>
             <p>{curso.descripcion}</p>
-            <p><strong>{curso.precio}</strong></p>
-            <a href={curso.enlace} target="_blank" rel="noopener noreferrer">
-              Inscribirme por WhatsApp
-            </a>
+            <Link to={curso.enlace} className="curso-btn">
+              Ver más
+            </Link>
           </div>
         ))}
       </div>
-    );
-  }
-  
-  export default Cursos;
-  
+    </div>
+  );
+}
+
+export default Cursos;

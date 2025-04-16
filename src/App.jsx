@@ -1,8 +1,12 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Tienda from "./pages/Tienda";
 import Carrito from "./pages/Carrito";
 import Cursos from "./pages/Cursos";
+import CursoIntro from "./pages/CursoIntro";
+import CursoParasitologia from "./pages/CursoParasitologia";
+import CursoMedicina from "./pages/CursoMedicina";
 import "./App.css";
 
 function App() {
@@ -10,8 +14,7 @@ function App() {
     <Router>
       <div className="app">
         <header className="header">
-          <img src="/logo.png" alt="Celaya Reptiles" className="logo" />
-          <h1>Celaya Reptiles</h1>
+          <div className="logo">🦎 Celaya Reptiles</div>
           <nav className="nav">
             <Link to="/">Inicio</Link>
             <Link to="/tienda">Tienda</Link>
@@ -26,6 +29,9 @@ function App() {
             <Route path="/tienda" element={<Tienda />} />
             <Route path="/carrito" element={<Carrito />} />
             <Route path="/cursos" element={<Cursos />} />
+            <Route path="/curso-introduccion" element={<CursoIntro />} />
+            <Route path="/curso-parasitologia" element={<CursoParasitologia />} />
+            <Route path="/curso-medicina" element={<CursoMedicina />} />
           </Routes>
         </main>
 
@@ -38,5 +44,3 @@ function App() {
 }
 
 export default App;
-
-

@@ -1,5 +1,5 @@
 {
-  "name": "celaya-reptiles",
+  "name": "celaya-reptiles-v2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "mercadopago": "^2.4.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "^7.5.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

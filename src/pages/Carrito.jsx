@@ -1,61 +1,69 @@
-import React from 'react';
-import { useCart } from '../context/CartContext';
+import React from "react";
+import { useCart } from "../context/CartContext";
+import "./Carrito.css";
 
 const Carrito = () => {
   const { carrito, eliminarDelCarrito, vaciarCarrito } = useCart();
 
+  const finalizarCompra = async () => {
+    try {
+      const response = await fetch("/api/crear-preferencia", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          items: carrito.map((item) => ({
+            title: item.nombre,
+            quantity: 1,
+            unit_price: Number(item.precio),
+          })),
+        }),
+      });
+
+      const data = await response.json();
+      if (data.init_point) {
+        window.location.href = data.init_point;
+      } else {
+        alert("Hubo un error al generar el link de pago.");
+      }
+    } catch (error) {
+      console.error("❌ Error al finalizar compra:", error);
+      alert("Ocurrió un error al procesar el pago.");
+    }
+  };
+
   return (
-    <div>
+    <div className="carrito">
       <h2>🛒 Tu Carrito</h2>
 
       {carrito.length === 0 ? (
-        <p>No hay productos en el carrito.</p>
+        <p className="vacio">No hay productos en el carrito.</p>
       ) : (
-        <div>
+        <div className="carrito-lista">
           {carrito.map((producto, index) => (
-            <div
-              key={index}
-              style={{
-                border: '1px solid #ccc',
-                padding: '1rem',
-                marginBottom: '1rem',
-                borderRadius: '10px',
-                background: 'white',
-              }}
-            >
-              <h3>{producto.nombre}</h3>
-              <p>Precio: ${producto.precio}</p>
+            <div className="carrito-item" key={index}>
+              <div>
+                <h3>{producto.nombre}</h3>
+                <p>Precio: ${producto.precio} MXN</p>
+              </div>
               <button
                 onClick={() => eliminarDelCarrito(index)}
-                style={{
-                  backgroundColor: '#e67e22',
-                  color: 'white',
-                  border: 'none',
-                  padding: '0.5rem 1rem',
-                  borderRadius: '5px',
-                  cursor: 'pointer',
-                }}
+                className="btn eliminar"
               >
                 Eliminar
               </button>
             </div>
           ))}
 
-          <button
-            onClick={vaciarCarrito}
-            style={{
-              marginTop: '1rem',
-              padding: '0.7rem 1.5rem',
-              backgroundColor: '#e74c3c',
-              color: 'white',
-              border: 'none',
-              borderRadius: '5px',
-              fontWeight: 'bold',
-              cursor: 'pointer',
-            }}
-          >
-            Vaciar carrito
-          </button>
+          <div className="carrito-acciones">
+            <button className="btn vaciar" onClick={vaciarCarrito}>
+              Vaciar Carrito
+            </button>
+            <button className="btn comprar" onClick={finalizarCompra}>
+              Finalizar Compra
+            </button>
+          </div>
         </div>
       )}
     </div>
