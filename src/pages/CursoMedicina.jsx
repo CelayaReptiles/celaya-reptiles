@@ -1,17 +1,17 @@
-// src/pages/CursoMedicina.jsx
 import React from "react";
+import "./CursoDetalle.css";
 
-function CursoMedicina() {
+const CursoSerpientes = () => {
   return (
     <div className="curso-detalle">
-      <h2>🩺 Medicina en serpientes</h2>
+      <h2>Medicina en serpientes</h2>
+      <img src="/assets/curso-serpientes.jpg" alt="Curso Medicina en serpientes" />
       <p>
-        Aprende los principios básicos de la medicina en serpientes: desde
-        anatomía, fisiología, signos clínicos comunes hasta primeros auxilios y
-        protocolos médicos.
+        Aprende a identificar signos clínicos, enfermedades frecuentes y técnicas médicas en serpientes.
+        Ideal para médicos veterinarios o estudiantes que deseen especializarse en especies ofidias.
       </p>
     </div>
   );
-}
+};
 
-export default CursoMedicina;
+export default CursoSerpientes;

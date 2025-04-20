@@ -1,18 +1,17 @@
-// src/pages/CursoIntro.jsx
 import React from "react";
+import "./CursoDetalle.css";
 
-function CursoIntro() {
+const CursoIntro = () => {
   return (
     <div className="curso-detalle">
-      <h2>🦎 Introducción al mundo de los reptiles</h2>
+      <h2>Introducción al mundo de los reptiles</h2>
+      <img src="/assets/curso-reptiles.jpg" alt="Curso Introducción a los reptiles" />
       <p>
-        Aprende los conceptos básicos sobre el manejo, cuidados, alimentación y
-        hábitats de los reptiles más comunes en cautiverio. Ideal para
-        principiantes y entusiastas.
+        Aprende los conceptos fundamentales sobre reptiles: su biología, tipos, hábitats y cuidados básicos.
+        Ideal para principiantes y amantes de los animales exóticos que quieren iniciar con el pie derecho.
       </p>
-      {/* Aquí puedes insertar a futuro el video o contenido premium */}
     </div>
   );
-}
+};
 
 export default CursoIntro;

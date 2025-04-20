@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import { CartProvider } from "./context/CartContext.jsx";
+import App from "./App";
+import { CartProvider } from "./context/CartContext";
+import { SearchProvider } from "./context/SearchContext"; // ← Asegúrate que esta ruta esté bien
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <CartProvider>
-      <App />
+      <SearchProvider>
+        <App />
+      </SearchProvider>
     </CartProvider>
   </React.StrictMode>
 );

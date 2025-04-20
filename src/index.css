@@ -1,7 +1,44 @@
-/* Estilos base del sitio */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-  
+/* index.css */
+
+/* Estilos base */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modo oscuro global */
+body.dark-mode, html.dark-mode {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+/* Asegura que el fondo se mantenga oscuro en los contenedores principales */
+body.dark-mode .tienda,
+body.dark-mode .home-container,
+body.dark-mode main,
+body.dark-mode .carrito,
+body.dark-mode .pagina,
+body.dark-mode #root {
+  background-color: #1a1a1a !important;
+  color: #f5f5f5;
+}
+
+/* Estilo de enlaces en modo oscuro */
+body.dark-mode a {
+  color: #00c8ff;
+}
+
+/* Transiciones suaves para todos los textos */
+h1, h2, h3, h4, h5, h6, p, span {
+  transition: color 0.3s ease;
+}
+
+/* Botones en general */
+button {
+  transition: background 0.3s ease, color 0.3s ease;
+}

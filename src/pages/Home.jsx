@@ -2,35 +2,38 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
-function Home() {
+const Home = () => {
   return (
     <div className="home-container">
       <section className="hero">
-        <div className="hero-content">
+        <div className="hero-texto">
           <h1>Bienvenido a Celaya Reptiles</h1>
-          <p>Especialistas en reptiles, exóticos y cursos online 🦎</p>
-          <Link to="/tienda" className="hero-button">
-            Ver Tienda
-          </Link>
+          <p>Descubre reptiles extraordinarios y aprende con nuestros cursos especializados.</p>
+          <div className="hero-botones">
+            <Link to="/tienda" className="boton-primario">Ver Reptiles</Link>
+            <Link to="/cursos" className="boton-secundario">Explorar Cursos</Link>
+          </div>
         </div>
+        <img src="/assets/dragon-barbudo.jpg" alt="Reptil destacado" className="hero-imagen" />
       </section>
 
-      <section className="features">
-        <div className="feature-card">
-          <h3>🐍 Reptiles en Venta</h3>
-          <p>Gran variedad de reptiles saludables y certificados.</p>
-        </div>
-        <div className="feature-card">
-          <h3>📚 Cursos Online</h3>
-          <p>Capacítate con nuestros cursos 100% en línea.</p>
-        </div>
-        <div className="feature-card">
-          <h3>🎓 Asesorías Personalizadas</h3>
-          <p>Consulta con expertos en animales exóticos.</p>
+      <section className="destacados">
+        <h2>Explora nuestras secciones</h2>
+        <div className="destacados-grid">
+          <Link to="/tienda" className="destacado-card">
+            <img src="/assets/gecko-leopardo.jpg" alt="Tienda" />
+            <h3>Tienda</h3>
+            <p>Reptiles disponibles y productos exclusivos.</p>
+          </Link>
+          <Link to="/cursos" className="destacado-card">
+            <img src="/assets/curso-reptiles.jpg" alt="Cursos" />
+            <h3>Cursos</h3>
+            <p>Aprende con contenido especializado en reptiles.</p>
+          </Link>
         </div>
       </section>
     </div>
   );
-}
+};
 
 export default Home;
