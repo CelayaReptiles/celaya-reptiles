@@ -53,14 +53,14 @@ export const productos = [
     {
       id: 8,
       nombre: "Gecko Leopardo High Yellow",
-      categoria: "geckos-leopardo",
+      categoria: "geckos",
       precio: 950,
       imagen: "/assets/gecko-leopardo.jpg",
     },
     {
       id: 9,
       nombre: "Erizo Africano",
-      categoria: "pequenos-mamiferos",
+      categoria: "mamiferos",
       precio: 1200,
       imagen: "/assets/erizo.jpg",
     },
@@ -102,7 +102,7 @@ export const productos = [
     {
       id: 15,
       nombre: "Pinzas de alimentación",
-      categoria: "articulos-herpetologicos",
+      categoria: "herpetologicos",
       precio: 90,
       imagen: "/assets/pinzas.jpg",
     },
@@ -116,7 +116,7 @@ export const productos = [
     {
       id: 17,
       nombre: "Ratón congelado (1 pz)",
-      categoria: "alimento-descongelado",
+      categoria: "alimento-congelado",
       precio: 35,
       imagen: "/assets/raton-congelado.jpg",
     },

@@ -27,7 +27,7 @@ import CategoriaIluminacion from "./pages/categorias/iluminacion";
 import CategoriaLibros from "./pages/categorias/libros";
 import CategoriaHerpetologicos from "./pages/categorias/articulos-herpetologicos";
 import CategoriaAlimentoVivo from "./pages/categorias/alimento-vivo";
-import CategoriaAlimentoCongelado from "./pages/categorias/alimento-descongelado";
+import CategoriaAlimentoCongelado from "./pages/categorias/alimento-congelado";
 import CategoriaAlimentoSeco from "./pages/categorias/alimento-seco";
 import CategoriaTodos from "./pages/categorias/todos";
 
