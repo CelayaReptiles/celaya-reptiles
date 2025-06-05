@@ -8,13 +8,13 @@ const CategoriaIluminacion = () => {
       id: 1,
       nombre: "Foco UVB 10.0",
       precio: 290,
-      imagen: "/assets/foco-uvb.jpg",
+      imagen: "/assets/iluminacion.jpg",
     },
     {
       id: 2,
       nombre: "Lampara de Calor Cerámica",
       precio: 330,
-      imagen: "/assets/lampara-ceramica.jpg",
+      imagen: "/assets/iluminacion.jpg",
     },
   ];
 

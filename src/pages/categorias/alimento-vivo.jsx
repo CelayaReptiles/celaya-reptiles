@@ -8,13 +8,13 @@ const CategoriaAlimentoVivo = () => {
       id: 1,
       nombre: "Grillos Medianos",
       precio: 1.5,
-      imagen: "/assets/grillos.jpg",
+      imagen: "/assets/alimento-vivo.jpg",
     },
     {
       id: 2,
       nombre: "Zophobas (gusano rey)",
       precio: 2.0,
-      imagen: "/assets/zophobas.jpg",
+      imagen: "/assets/alimento-vivo.jpg",
     },
   ];
 

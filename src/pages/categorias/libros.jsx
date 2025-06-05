@@ -8,13 +8,13 @@ const CategoriaLibros = () => {
       id: 1,
       nombre: "Guía de Reptiles Exóticos",
       precio: 390,
-      imagen: "/assets/libro-reptiles.jpg",
+      imagen: "/assets/libros.jpg",
     },
     {
       id: 2,
       nombre: "Atlas de Serpientes",
       precio: 450,
-      imagen: "/assets/libro-serpientes.jpg",
+      imagen: "/assets/libros.jpg",
     },
   ];
 

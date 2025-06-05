@@ -8,13 +8,13 @@ const CategoriaHerpetologicos = () => {
       id: 1,
       nombre: "Pinzas para Alimentación",
       precio: 75,
-      imagen: "/assets/pinzas.jpg",
+      imagen: "/assets/articulos-herpetologicos.jpg",
     },
     {
       id: 2,
       nombre: "Caja de Transporte Plástica",
       precio: 160,
-      imagen: "/assets/caja-transporte.jpg",
+      imagen: "/assets/articulos-herpetologicos.jpg",
     },
   ];
 

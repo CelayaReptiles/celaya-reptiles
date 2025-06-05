@@ -8,13 +8,13 @@ const CategoriaAccesorios = () => {
       id: 1,
       nombre: "Cueva de Resina",
       precio: 220,
-      imagen: "/assets/cueva-resina.jpg",
+      imagen: "/assets/accesorios.jpg",
     },
     {
       id: 2,
       nombre: "Plato de Agua Decorativo",
       precio: 180,
-      imagen: "/assets/plato-decorativo.jpg",
+      imagen: "/assets/accesorios.jpg",
     },
   ];
 

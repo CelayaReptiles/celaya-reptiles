@@ -14,7 +14,7 @@ const CategoriaLagartos = () => {
       id: 2,
       nombre: "Uromastyx",
       precio: 2800,
-      imagen: "/assets/uromastyx.jpg",
+      imagen: "/assets/lagartos.jpg",
     },
   ];
 

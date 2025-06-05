@@ -8,13 +8,13 @@ const CategoriaAlimentoCongelado = () => {
       id: 1,
       nombre: "Ratón Rosa Congelado",
       precio: 25,
-      imagen: "/assets/raton-congelado.jpg",
+      imagen: "/assets/alimento-congelado.jpg",
     },
     {
       id: 2,
       nombre: "Rata Mediana Congelada",
       precio: 45,
-      imagen: "/assets/rata-congelada.jpg",
+      imagen: "/assets/alimento-congelado.jpg",
     },
   ];
 

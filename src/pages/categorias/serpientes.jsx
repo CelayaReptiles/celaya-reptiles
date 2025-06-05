@@ -14,7 +14,7 @@ const CategoriaSerpientes = () => {
       id: 2,
       nombre: "Falsa Coral",
       precio: 2200,
-      imagen: "/assets/falsa-coral.jpg",
+      imagen: "/assets/serpiente.jpg",
     },
   ];
 

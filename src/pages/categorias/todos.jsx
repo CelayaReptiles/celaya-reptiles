@@ -7,7 +7,7 @@ const todosLosProductos = [
     id: 1,
     nombre: "Camaleón Velado",
     precio: 1800,
-    imagen: "/assets/camaleon-velado.jpg",
+    imagen: "/assets/camaleones.jpg",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const todosLosProductos = [
     id: 3,
     nombre: "Pitón Bola Normal",
     precio: 2200,
-    imagen: "/assets/piton-bola.jpg",
+    imagen: "/assets/pitones-bola.jpg",
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const todosLosProductos = [
     id: 5,
     nombre: "Tortuga Sulcata",
     precio: 2900,
-    imagen: "/assets/tortuga-sulcata.jpg",
+    imagen: "/assets/tortugas.jpg",
   },
   {
     id: 6,

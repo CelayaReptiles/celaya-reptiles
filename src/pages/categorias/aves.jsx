@@ -8,13 +8,13 @@ const CategoriaAves = () => {
       id: 1,
       nombre: "Ninfa Lutina",
       precio: 1200,
-      imagen: "/assets/ninfa.jpg",
+      imagen: "/assets/aves.jpg",
     },
     {
       id: 2,
       nombre: "Cotorro Australiano",
       precio: 450,
-      imagen: "/assets/cotorro.jpg",
+      imagen: "/assets/aves.jpg",
     },
   ];
 

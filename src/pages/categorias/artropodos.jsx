@@ -8,13 +8,13 @@ const CategoriaArtropodos = () => {
       id: 1,
       nombre: "Tarántula Rosa Chilena",
       precio: 450,
-      imagen: "/assets/tarantula.jpg",
+      imagen: "/assets/artropodos.jpg",
     },
     {
       id: 2,
       nombre: "Escorpión Emperador",
       precio: 600,
-      imagen: "/assets/escorpion.jpg",
+      imagen: "/assets/artropodos.jpg",
     },
   ];
 

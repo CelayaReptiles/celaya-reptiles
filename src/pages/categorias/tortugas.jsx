@@ -8,13 +8,13 @@ const CategoriaTortugas = () => {
       id: 1,
       nombre: "Tortuga de Orejas Rojas",
       precio: 350,
-      imagen: "/assets/tortuga-orejas-rojas.jpg",
+      imagen: "/assets/tortugas.jpg",
     },
     {
       id: 2,
       nombre: "Tortuga Sulcata",
       precio: 2900,
-      imagen: "/assets/tortuga-sulcata.jpg",
+      imagen: "/assets/tortugas.jpg",
     },
   ];
 

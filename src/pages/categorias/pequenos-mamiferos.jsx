@@ -8,13 +8,13 @@ const CategoriaPequenosMamiferos = () => {
       id: 1,
       nombre: "Erizo Africano",
       precio: 1500,
-      imagen: "/assets/erizo.jpg",
+      imagen: "/assets/pequenos-mamiferos.jpg",
     },
     {
       id: 2,
       nombre: "Conejo Mini Rex",
       precio: 950,
-      imagen: "/assets/conejo.jpg",
+      imagen: "/assets/pequenos-mamiferos.jpg",
     },
   ];
 

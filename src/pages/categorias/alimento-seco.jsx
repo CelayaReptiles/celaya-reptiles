@@ -8,13 +8,13 @@ const CategoriaAlimentoSeco = () => {
       id: 1,
       nombre: "Croquetas para Tortuga",
       precio: 90,
-      imagen: "/assets/croquetas-tortuga.jpg",
+      imagen: "/assets/alimento-seco.jpg",
     },
     {
       id: 2,
       nombre: "Alimento Pellet para Iguanas",
       precio: 110,
-      imagen: "/assets/pellets-iguana.jpg",
+      imagen: "/assets/alimento-seco.jpg",
     },
   ];
 

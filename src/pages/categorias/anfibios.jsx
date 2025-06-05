@@ -8,13 +8,13 @@ const CategoriaAnfibios = () => {
       id: 1,
       nombre: "Rana Pacman",
       precio: 950,
-      imagen: "/assets/rana-pacman.jpg",
+      imagen: "/assets/anfibios.jpg",
     },
     {
       id: 2,
       nombre: "Rana Arborícola",
       precio: 870,
-      imagen: "/assets/rana-arboricola.jpg",
+      imagen: "/assets/anfibios.jpg",
     },
   ];
 

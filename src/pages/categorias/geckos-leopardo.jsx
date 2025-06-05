@@ -14,7 +14,7 @@ const CategoriaGeckos = () => {
       id: 2,
       nombre: "Gecko Leopardo Albino",
       precio: 1200,
-      imagen: "/assets/gecko-leopardo-albino.jpg",
+      imagen: "/assets/gecko-leopardo.jpg",
     },
   ];
 

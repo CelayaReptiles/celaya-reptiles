@@ -8,13 +8,13 @@ const CategoriaBoas = () => {
       id: 1,
       nombre: "Boa Imperator",
       precio: 3200,
-      imagen: "/assets/boa.jpg",
+      imagen: "/assets/boas.jpg",
     },
     {
       id: 2,
       nombre: "Boa Albina",
       precio: 4200,
-      imagen: "/assets/boa-albina.jpg",
+      imagen: "/assets/boas.jpg",
     },
   ];
 

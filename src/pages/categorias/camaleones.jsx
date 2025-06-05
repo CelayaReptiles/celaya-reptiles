@@ -8,13 +8,13 @@ const CategoriaCamaleones = () => {
       id: 1,
       nombre: "Camaleón Velado",
       precio: 1800,
-      imagen: "/assets/camaleon-velado.jpg",
+      imagen: "/assets/camaleones.jpg",
     },
     {
       id: 2,
       nombre: "Camaleón Pantera",
       precio: 3200,
-      imagen: "/assets/camaleon-pantera.jpg",
+      imagen: "/assets/camaleones.jpg",
     },
   ];
 

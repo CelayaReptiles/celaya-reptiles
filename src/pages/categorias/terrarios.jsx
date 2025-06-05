@@ -8,13 +8,13 @@ const CategoriaTerrarios = () => {
       id: 1,
       nombre: "Terrario de Vidrio 60x45x45",
       precio: 2100,
-      imagen: "/assets/terrario.jpg",
+      imagen: "/assets/terrarios-jaulas.jpg",
     },
     {
       id: 2,
       nombre: "Jaula para Reptiles Pequeños",
       precio: 950,
-      imagen: "/assets/jaula-reptiles.jpg",
+      imagen: "/assets/terrarios-jaulas.jpg",
     },
   ];
 

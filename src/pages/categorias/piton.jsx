@@ -8,13 +8,13 @@ const CategoriaPiton = () => {
       id: 1,
       nombre: "Pitón Bola Normal",
       precio: 2200,
-      imagen: "/assets/piton-bola.jpg",
+      imagen: "/assets/pitones-bola.jpg",
     },
     {
       id: 2,
       nombre: "Pitón Bola Morph Banana",
       precio: 4500,
-      imagen: "/assets/piton-banana.jpg",
+      imagen: "/assets/pitones-bola.jpg",
     },
   ];
 
