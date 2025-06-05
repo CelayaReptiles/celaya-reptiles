@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/Categoria.css";
 
+import ProductCard from "../../components/ProductCard";
 const CategoriaTortugas = () => {
   const productos = [
     {
@@ -21,14 +22,7 @@ const CategoriaTortugas = () => {
     <div className="categoria">
       <h2>Tortugas Disponibles</h2>
       <div className="productos-grid">
-        {productos.map((item) => (
-          <div key={item.id} className="producto-card">
-            <img src={item.imagen} alt={item.nombre} />
-            <h3>{item.nombre}</h3>
-            <p>${item.precio} MXN</p>
-            <button>Añadir al carrito</button>
-          </div>
-        ))}
+        {productos.map((item) => (<ProductCard key={item.id} item={item} />))}
       </div>
     </div>
   );
