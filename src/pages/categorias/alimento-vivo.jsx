@@ -1,19 +1,20 @@
 import React from "react";
 import "../../styles/Categoria.css";
 
+import ProductCard from "../../components/ProductCard";
 const CategoriaAlimentoVivo = () => {
   const productos = [
     {
       id: 1,
       nombre: "Grillos Medianos",
       precio: 1.5,
-      imagen: "/assets/grillos.jpg",
+      imagen: "/assets/alimento-vivo.jpg",
     },
     {
       id: 2,
       nombre: "Zophobas (gusano rey)",
       precio: 2.0,
-      imagen: "/assets/zophobas.jpg",
+      imagen: "/assets/alimento-vivo.jpg",
     },
   ];
 
@@ -21,14 +22,7 @@ const CategoriaAlimentoVivo = () => {
     <div className="categoria">
       <h2>Alimento Vivo Disponible</h2>
       <div className="productos-grid">
-        {productos.map((item) => (
-          <div key={item.id} className="producto-card">
-            <img src={item.imagen} alt={item.nombre} />
-            <h3>{item.nombre}</h3>
-            <p>${item.precio} MXN</p>
-            <button>Añadir al carrito</button>
-          </div>
-        ))}
+        {productos.map((item) => (<ProductCard key={item.id} item={item} />))}
       </div>
     </div>
   );

@@ -1,19 +1,20 @@
 import React from "react";
 import "../../styles/Categoria.css";
 
+import ProductCard from "../../components/ProductCard";
 const CategoriaAnfibios = () => {
   const productos = [
     {
       id: 1,
       nombre: "Rana Pacman",
       precio: 950,
-      imagen: "/assets/rana-pacman.jpg",
+      imagen: "/assets/anfibios.jpg",
     },
     {
       id: 2,
       nombre: "Rana Arborícola",
       precio: 870,
-      imagen: "/assets/rana-arboricola.jpg",
+      imagen: "/assets/anfibios.jpg",
     },
   ];
 
@@ -21,14 +22,7 @@ const CategoriaAnfibios = () => {
     <div className="categoria">
       <h2>Anfibios Disponibles</h2>
       <div className="productos-grid">
-        {productos.map((item) => (
-          <div key={item.id} className="producto-card">
-            <img src={item.imagen} alt={item.nombre} />
-            <h3>{item.nombre}</h3>
-            <p>${item.precio} MXN</p>
-            <button>Añadir al carrito</button>
-          </div>
-        ))}
+        {productos.map((item) => (<ProductCard key={item.id} item={item} />))}
       </div>
     </div>
   );
